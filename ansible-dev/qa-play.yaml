@@ -8,12 +8,12 @@
       apt:
        state: present
        name:
-       - docker
-       - wget
-       - lsof
-       - unzip
-       - passwd
-       - java-11*
+        - docker
+        - wget
+        - lsof
+        - unzip
+        - passwd
+        - open-jdk-11*
     
     - name: Create Directory
       file:
