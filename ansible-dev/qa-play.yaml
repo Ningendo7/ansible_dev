@@ -4,13 +4,6 @@
   become_user: root
   ignore_errors: yes
   tasks:
-    - name: Install python3 and python3-apt
-      raw: |
-        apt-get update
-        apt-get install -y python3 python3-apt
-      register: result
-      changed_when: "'installed' in result.stdout or 'upgraded' in result.stdout"
-
     - name: Install packages
       yum:
        state: present
