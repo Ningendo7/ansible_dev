@@ -6,7 +6,6 @@
   tasks:
     - name: Install packages
       apt:
-       state: present
        pkg:
         - docker
         - wget
